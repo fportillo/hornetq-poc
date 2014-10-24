@@ -14,6 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Chapter 10. The Client Classpath -->
+    <!-- Refer to http://docs.jboss.org/hornetq/2.4.0.Final/docs/user-manual/html/client-classpath.html -->
+    <!-- for further information about hornetQ core client as well as JMS client dependencies -->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -23,23 +26,13 @@
         </dependency>
         <dependency>
             <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-core</artifactId>
-            <version>2.2.21.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-jms-client</artifactId>
-            <version>2.4.4.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hornetq</groupId>
             <artifactId>hornetq-core-client</artifactId>
             <version>2.4.4.Final</version>
         </dependency>
         <dependency>
             <groupId>org.hornetq</groupId>
-            <artifactId>hornetq-jms</artifactId>
-            <version>2.2.21.Final</version>
+            <artifactId>hornetq-commons</artifactId>
+            <version>2.4.4.Final</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
@@ -47,9 +40,19 @@
             <version>3.9.4.Final</version>
         </dependency>
         <dependency>
-            <groupId>javax.jms</groupId>
-            <artifactId>jms</artifactId>
-            <version>1.1</version>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_1.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hornetq</groupId>
+            <artifactId>hornetq-jms-client</artifactId>
+            <version>2.4.4.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>jboss</groupId>
+            <artifactId>jnp-client</artifactId>
+            <version>4.2.2.GA</version>
         </dependency>
     </dependencies>
 </project>

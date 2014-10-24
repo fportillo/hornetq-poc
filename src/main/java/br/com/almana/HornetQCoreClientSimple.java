@@ -4,7 +4,7 @@ import org.hornetq.api.core.TransportConfiguration;
 import org.hornetq.api.core.client.*;
 import org.hornetq.core.remoting.impl.netty.NettyConnectorFactory;
 
-public class App {
+public class HornetQCoreClientSimple {
     public static void main(String[] args) {
         try {
 
